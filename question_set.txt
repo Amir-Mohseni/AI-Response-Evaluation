@@ -1,0 +1,32 @@
+Question: How many straight lines can be formed by 8 points of which 3 are collinear?
+Answer: 8C2 - 3C2 + 1 (general formula "nC2 - rC2 + 1")
+
+Question: How many triangles can be formed by 8 points of which 3 are collinear?
+Answer: 8C3 - 3C3 (general formula "8C3 - rC3")
+
+Question: How many committees of 5 students can be selected from a class of 25?
+Answer: Choose 5 out of 25 = 25C5 = 53130
+
+Question: How many 10-letter patterns can be formed from the letters of the word “BASKETBALL”?
+Answer: Total letters=10, B=2, A=2, S=1, K=1, E=1, T=1, L=2 so total number of 10 letter words = 604800
+
+Question: A box contains 12 black and 8 green marbles. How many ways can 3 black and 2 green marbles be chosen?
+Answer: 12C3 + 8C2 = 248
+
+Question: a) How many different ways can the students be assigned seats at the table? b) How many ways can a president and a vice-president be elected from the 8 students?
+Answer: a) 8! ways b) 8C1 x 7C1 = 56
+
+Question: A Club consists of 20 members, of which 9 are male and 11 are female. Seven members will be selected to form an event-planning committee. How many committees of 4 females and 3 males can be formed?
+Answer: Total number of committees = 11C₄ x ⁹C₃
+
+Question: How many 7-digit telephone numbers can be formed if the first digit cannot be 0 or 1?
+Answer: Total number of telephone numbers = 8 x 10^6
+
+Question: Six people are seated at a round table to play a game of cards. a) Is the seating arrangement around the table a linear or circular permutation? b) How many possible seating arrangements are there?
+Answer: a) Circular permutation b) (6 – 1)! = 120 possible arrangements
+
+Question: How many different 5-digit street addresses can have the digits 4, 7, 3, 4, and 8?
+Answer: Total number of 5-digit addresses = 5! / 2! = 60
+
+Question: Three hardcover books and 5 paperbacks are placed on a shelf. How many ways can the books be arranged if all the hardcover books must be together and all the paperbacks must be together?
+Answer: 2! x 3! x 5!
