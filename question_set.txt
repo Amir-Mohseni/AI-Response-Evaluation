@@ -30,3 +30,24 @@ Answer: Total number of 5-digit addresses = 5! / 2! = 60
 
 Question: Three hardcover books and 5 paperbacks are placed on a shelf. How many ways can the books be arranged if all the hardcover books must be together and all the paperbacks must be together?
 Answer: 2! x 3! x 5!
+
+Question: Let \( A \) and \( B \) be two finite sets, with \( |A| = m \) and \( |B| = n \). How many distinct functions (mappings) can you define from set \( A \) to set \( B \)?
+Answer: We can solve this problem using the multiplication principle. To define a mapping from \( A \) to \( B \), we have \( n \) options for \( a_1 \), \( n \) options for \( a_2 \), and so on. Thus by the multiplication principle, the total number of distinct functions is \( n^m \).
+
+Question: A function is said to be one-to-one if for all \( x_1, x_2 \in A \), we have \( f(x_1) \ne f(x_2) \). Let \( A \) and \( B \) be two finite sets, with \( |A| = m \) and \( |B| = n \). How many distinct one-to-one functions (mappings) can you define from set \( A \) to set \( B \)?
+Answer: To define a one-to-one mapping from \( A \) to \( B \), we have \( n \) options for \( a_1 \), \( n - 1 \) options for \( a_2 \), and so on. Thus by the multiplication principle, the total number of distinct one-to-one functions is \( P(n, m) = \frac{n!}{(n - m)!} \).
+
+Question: An urn contains 30 red balls and 70 green balls. What is the probability of getting exactly \( k \) red balls in a sample of size 20 if the sampling is done with replacement? Assume \( 0 \le k \le 20 \).
+Answer: This is a binomial experiment. The probability of choosing a red ball in one trial is \( 0.3 \). Using the binomial formula, the probability of getting exactly \( k \) red balls in 20 trials is \( P(k \text{ red balls}) = \binom{20}{k} (0.3)^k (0.7)^{20 - k} \).
+
+Question: An urn consists of 30 red balls and 70 green balls. What is the probability of getting exactly \( k \) red balls in a sample of size 20 if the sampling is done without replacement?
+Answer: Let \( A \) be the event of getting exactly \( k \) red balls. The total number of ways to choose 20 balls from 100 is \( \binom{100}{20} \). The number of ways to choose \( k \) red balls from 30 is \( \binom{30}{k} \), and the number of ways to choose \( 20 - k \) green balls from 70 is \( \binom{70}{20 - k} \). Therefore, \( P(A) = \frac{\binom{30}{k} \binom{70}{20 - k}}{\binom{100}{20}} \).
+
+Question: Assume that there are 100 people in a room and we know that: 25% with probability 1/4, 50% with probability 1/4, and 75% with probability 1/2. a. What is the probability that at least two of them have been born in the same month? Assume that all months are equally likely. b. Given that we already know there are at least two people that celebrate their birthday in the same month, what is the probability that 10% of the people share the same birth month?
+Answer: a. The probability that at least two people out of 100 have birthdays in the same month can be found using the complement of the probability that all birthdays are in different months. This is approximately 1 for a group of 100 people because the probability of all having different birthdays becomes extremely small. b. Using Bayes' rule, \( P(k = 10|A) = \frac{P(A|k = 10)P(k = 10)}{P(A)} \).
+
+Question: How many distinct solutions does the following equation have? \( x_1 + x_2 + x_3 + x_4 = 100 \) such that \( x_1 \in \{1, 2, 3, \ldots\} \), \( x_2 \in \{2, 3, 4, \ldots\} \), \( x_3, x_4 \in \{0, 1, 2, \ldots\} \).
+Answer: We need to convert the restrictions to the general form. Define \( y_1 = x_1 - 1 \) and \( y_2 = x_2 - 2 \). The equation becomes \( y_1 + y_2 + x_3 + x_4 = 97 \), where \( y_1, y_2, x_3, x_4 \in \{0, 1, 2, \ldots\} \). The number of solutions is given by \( \binom{97 + 4 - 1}{4 - 1} = \binom{100}{3} \).
+
+Question: Guests arrive at a party. Each person is wearing a hat. We collect all hats and then randomly redistribute the hats, giving each person one of the \( N \) hats randomly. What is the probability that at least one person receives his/her own hat?
+Answer: Using the inclusion-exclusion principle, we find \( P(E) = 1 - \frac{1}{2!} + \frac{1}{3!} - \ldots + \frac{(-1)^{N-1}}{N!} \). As \( N \) becomes large, this approaches \( 1 - \frac{1}{e} \).
