@@ -4,3 +4,4 @@ pandas
 numpy
 matplotlib
 google-generativeai
+seaborn
